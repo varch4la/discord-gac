@@ -46,5 +46,10 @@
 			<artifactId>gson</artifactId>
 			<version>2.13.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>3.50.3.0</version>
+		</dependency>
 	</dependencies>
 </project>

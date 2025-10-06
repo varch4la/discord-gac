@@ -1,6 +1,7 @@
 package com.github.varch4la.dgac;
 
-import static io.javalin.apibuilder.ApiBuilder.*;
+import static io.javalin.apibuilder.ApiBuilder.get;
+import static io.javalin.apibuilder.ApiBuilder.path;
 
 import java.io.File;
 import java.io.FileReader;
@@ -41,9 +42,12 @@ public class GACMain {
 			return;
 		}
 
+		UserDatabase db = new UserDatabase(new File(config.getDatabase()));
+
 		JDA jda = JDABuilder.createLight(config.getToken(), GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_MEMBERS)
 				.setMemberCachePolicy(MemberCachePolicy.ALL).enableCache(CacheFlag.ONLINE_STATUS, CacheFlag.ACTIVITY)
 				.build().awaitReady();
+
 
 		PresenceController controller = new PresenceController(jda);
 
