@@ -11,6 +11,7 @@ import java.io.Writer;
 
 import com.github.varch4la.dgac.cfg.Config;
 import com.github.varch4la.dgac.command.ActivityShareCommand;
+import com.github.varch4la.dgac.exceptions.UserOptedOutException;
 import com.github.varch4la.dgac.presence.PresenceController;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -19,9 +20,6 @@ import io.javalin.Javalin;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.interactions.commands.build.CommandData;
-import net.dv8tion.jda.api.interactions.commands.build.Commands;
-import net.dv8tion.jda.api.interactions.commands.build.SlashCommandData;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
@@ -55,12 +53,13 @@ public class GACMain {
 
 		ActivityShareCommand shareCommand = new ActivityShareCommand(userDatabase);
 
-		for (Guild guild : jda.getGuilds())
+		for (Guild guild : jda.getGuilds()) {
 			guild.updateCommands().addCommands(shareCommand.getData()).queue();
+		}
 
 		jda.addEventListener(shareCommand);
 
-		PresenceController controller = new PresenceController(jda);
+		PresenceController controller = new PresenceController(jda, userDatabase);
 
 		Javalin javalin = Javalin.create(cfg -> {
 			cfg.router.apiBuilder(() -> {
@@ -68,6 +67,10 @@ public class GACMain {
 					get("{userId}", controller::userPresence);
 				});
 			});
+		});
+
+		javalin.exception(UserOptedOutException.class, (e, ctx) -> {
+			ctx.result("User opted out of the activity sharing");
 		});
 
 		javalin.start(8080);
