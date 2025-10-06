@@ -12,6 +12,19 @@
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 	</properties>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.5.0</version>
+				<configuration>
+					<mainClass>com.github.varch4la.dgac.GACMain</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>net.dv8tion</groupId>
@@ -22,6 +35,16 @@
 			<groupId>io.javalin</groupId>
 			<artifactId>javalin</artifactId>
 			<version>6.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.17</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.13.1</version>
 		</dependency>
 	</dependencies>
 </project>
