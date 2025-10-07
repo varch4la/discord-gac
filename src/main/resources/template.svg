@@ -67,7 +67,7 @@
            id="nickname"
            x="115.08286"
            y="56.695312"
-           style="font-weight:bold;font-size:21.3333px">Varch4la</tspan></text>
+           style="font-weight:bold;font-size:21.3333px">nickname</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
@@ -78,7 +78,7 @@
            id="username"
            x="115.19377"
            y="71.024979"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">var.chala</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">uname</tspan></text>
     </g>
     <rect
        style="fill:#ffffff"
@@ -100,7 +100,7 @@
            id="actname"
            x="75.32605"
            y="119.27483"
-           style="font-weight:bold">Eclipse IDE</tspan></text>
+           style="font-weight:bold">actname</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
@@ -111,7 +111,7 @@
            id="actline2"
            x="75.32605"
            y="143.69568"
-           style="font-weight:normal;font-size:9.33333px">Working on test</tspan></text>
+           style="font-weight:normal;font-size:9.33333px">line1</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
@@ -122,7 +122,7 @@
            id="actline1"
            x="75.32605"
            y="131.69568"
-           style="font-weight:normal;font-size:9.33333px">Editing Main.java</tspan></text>
+           style="font-weight:normal;font-size:9.33333px">line2</tspan></text>
       <g
          id="g1-3"
          transform="translate(0,16.556776)">

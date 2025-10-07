@@ -20,6 +20,7 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Activity.Timestamps;
 import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.RichPresence;
 
 public class PresenceController {
 
@@ -46,8 +47,12 @@ public class PresenceController {
 			List<PresenceActivity> acts = new ArrayList<>();
 			for (Activity act : m.getActivities()) {
 				Timestamps timestamps = act.getTimestamps();
+				RichPresence rp = null;
+				if (act.isRich())
+					rp = act.asRichPresence();
 				acts.add(new PresenceActivity(act.getName(), act.getState(), act.getUrl(), timestamps.getStart(),
-						timestamps.getEnd(), act.getType()));
+						timestamps.getEnd(), act.getType(), rp == null ? null : rp.getDetails(),
+						rp == null || rp.getLargeImage() == null ? null : rp.getLargeImage().getUrl()));
 			}
 			return new Presence(userId, m.getOnlineStatus(), List.copyOf(acts));
 		} else {
@@ -63,7 +68,8 @@ public class PresenceController {
 			ctx.status(HttpStatus.NOT_FOUND);
 		} else {
 			ctx.contentType(ContentType.IMAGE_SVG);
-			ctx.result(factory.createStatusCard());
+			ctx.result(factory.createStatusCard(getMember(userId).get(),
+					presence.activities().isEmpty() ? null : presence.activities().get(0)));
 		}
 	}
 
