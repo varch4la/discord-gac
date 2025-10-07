@@ -65,6 +65,7 @@ public class GACMain {
 			cfg.router.apiBuilder(() -> {
 				path("/presence", () -> {
 					get("{userId}", controller::userPresence);
+					get("{userId}/card", controller::statusCard);
 				});
 			});
 		});

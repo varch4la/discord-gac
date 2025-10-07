@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="45.87521mm"
+   viewBox="0 0 377.95274 173.38661"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="template.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.7960512"
+     inkscape:cx="194.87195"
+     inkscape:cy="79.619111"
+     inkscape:window-width="1275"
+     inkscape:window-height="728"
+     inkscape:window-x="14"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.957864"
+       id="rect1"
+       width="377.95273"
+       height="173.38661"
+       x="0"
+       y="0"
+       ry="14.303666" />
+    <rect
+       style="fill:#ffffff"
+       id="rect2"
+       width="75.164894"
+       height="75.164894"
+       x="20"
+       y="20"
+       ry="0" />
+    <g
+       id="g1"
+       transform="translate(-7.9999996)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+         x="115.08286"
+         y="56.695312"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="nickname"
+           x="115.08286"
+           y="56.695312"
+           style="font-weight:bold;font-size:21.3333px">Varch4la</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+         x="115.19377"
+         y="71.024979"
+         id="text1-5"><tspan
+           sodipodi:role="line"
+           id="username"
+           x="115.19377"
+           y="71.024979"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">var.chala</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffffff"
+       id="rect3"
+       width="47.326042"
+       height="47.326042"
+       x="20.886446"
+       y="109.61958"
+       ry="0" />
+    <g
+       id="g3">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+         x="75.32605"
+         y="119.27483"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="actname"
+           x="75.32605"
+           y="119.27483"
+           style="font-weight:bold">Eclipse IDE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+         x="75.32605"
+         y="143.69568"
+         id="text3-1"><tspan
+           sodipodi:role="line"
+           id="actline2"
+           x="75.32605"
+           y="143.69568"
+           style="font-weight:normal;font-size:9.33333px">Working on test</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+         x="75.32605"
+         y="131.69568"
+         id="text3-1-1"><tspan
+           sodipodi:role="line"
+           id="actline1"
+           x="75.32605"
+           y="131.69568"
+           style="font-weight:normal;font-size:9.33333px">Editing Main.java</tspan></text>
+      <g
+         id="g1-3"
+         transform="translate(0,16.556776)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
+           x="75.32605"
+           y="139.27483"
+           id="text3-"><tspan
+             sodipodi:role="line"
+             id="acttime"
+             x="75.32605"
+             y="139.27483"
+             style="font-weight:normal;fill:#4eff4e;fill-opacity:1">00:00</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
