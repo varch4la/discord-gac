@@ -62,7 +62,7 @@ public class StatusCardFactory {
 	}
 
 	private Document modifyDocument(String nickname, String username, String app, String line2, String line1,
-			String time) {
+			String time, String avatarUrl) {
 		Document copy = (Document) cardTemplate.cloneNode(true);
 
 		findNodeById(copy, "nickname").setTextContent(nickname);
@@ -71,6 +71,8 @@ public class StatusCardFactory {
 		findNodeById(copy, "actline1").setTextContent(line1);
 		findNodeById(copy, "actline2").setTextContent(line2);
 		findNodeById(copy, "acttime").setTextContent(time);
+		
+		findNodeById(copy, "image1").getAttributes().getNamedItem("xlink:href").setNodeValue(avatarUrl);
 
 		return copy;
 	}
@@ -82,7 +84,7 @@ public class StatusCardFactory {
 					new DOMSource(modifyDocument(member.getEffectiveName(), member.getUser().getName(),
 							act == null ? "Not playing anything" : act.name(), act == null ? "-" : act.state(),
 							act == null ? "-" : act.details() == null ? "" : act.details(),
-							dur == null ? "-" : fmt(dur.toMinutesPart()) + ":" + fmt(dur.toSecondsPart()))),
+							dur == null ? "-" : fmt(dur.toMinutesPart()) + ":" + fmt(dur.toSecondsPart()), member.getEffectiveAvatarUrl())),
 					new StreamResult(buffer));
 			return new String(buffer.toByteArray(), StandardCharsets.UTF_8);
 		}

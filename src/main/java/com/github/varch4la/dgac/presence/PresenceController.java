@@ -50,8 +50,9 @@ public class PresenceController {
 				RichPresence rp = null;
 				if (act.isRich())
 					rp = act.asRichPresence();
-				acts.add(new PresenceActivity(act.getName(), act.getState(), act.getUrl(), timestamps.getStart(),
-						timestamps.getEnd(), act.getType(), rp == null ? null : rp.getDetails(),
+				acts.add(new PresenceActivity(act.getName(), act.getState(), act.getUrl(),
+						timestamps == null ? -1 : timestamps.getStart(), timestamps == null ? -1 : timestamps.getEnd(),
+						act.getType(), rp == null ? null : rp.getDetails(),
 						rp == null || rp.getLargeImage() == null ? null : rp.getLargeImage().getUrl()));
 			}
 			return new Presence(userId, m.getOnlineStatus(), List.copyOf(acts));
