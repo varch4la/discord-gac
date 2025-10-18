@@ -74,7 +74,17 @@ public class GACMain {
 			ctx.result("User opted out of the activity sharing");
 		});
 
-		javalin.start(8080);
+		int port = 8080;
+
+		try {
+			String portS = System.getenv("PORT");
+			if(portS != null) {
+				port = Integer.parseInt(portS);
+			}
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
+		javalin.start(port);
 	}
 
 }
